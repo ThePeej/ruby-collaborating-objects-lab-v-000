@@ -33,5 +33,9 @@ class Artist
     @songs.each {|song| puts song}
   end
 
+  def self.all
+    @@all
+  end
+
 
 end
