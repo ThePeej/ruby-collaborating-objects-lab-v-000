@@ -12,6 +12,12 @@ class Artist
   end
 
   def find_or_create_by_name(artist)
-    if
+    if @@all.include?(artist)
+      artist
+    else
+      Artist.new(artist)
+    end
+  end
+
 
 end
