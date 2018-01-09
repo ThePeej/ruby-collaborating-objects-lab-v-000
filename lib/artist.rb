@@ -8,7 +8,10 @@ class Artist
   end
 
   def save
-    @@all << Song
+    @@all << self
   end
+
+  def find_or_create_by_name(artist)
+    if
 
 end
