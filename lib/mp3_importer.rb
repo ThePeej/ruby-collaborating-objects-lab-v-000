@@ -10,6 +10,7 @@ class MP3Importer
 
   def files
     @files = Dir.glob(@path + "/*")
+    binding.pry
     @files.each_with_index do |file, index|
       @files[index] = file.scan(/mp3s\/(.*)/)[0][0]
     end
