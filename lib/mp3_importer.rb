@@ -10,4 +10,8 @@ class Mp3_importer
     @path
   end
 
+  def import
+
+  end
+
 end
