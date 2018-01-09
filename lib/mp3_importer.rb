@@ -10,6 +10,7 @@ class MP3Importer
 
   def files
     @path
+    binding.pry
   end
 
   def import
