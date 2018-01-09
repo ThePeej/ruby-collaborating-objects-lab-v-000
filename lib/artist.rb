@@ -17,8 +17,8 @@ class Artist
   end
 
   def add_song(name)
-
-
+    song = Song.new(name)
+    @songs << song
   end
 
   def self.find_or_create_by_name(artist)
