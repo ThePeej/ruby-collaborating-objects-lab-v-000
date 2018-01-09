@@ -19,5 +19,8 @@ class Artist
     end
   end
 
+  def print
+    @songs.each {|song| puts song}
+
 
 end
