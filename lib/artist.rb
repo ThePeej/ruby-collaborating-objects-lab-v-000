@@ -11,7 +11,6 @@ class Artist
   end
 
   def songs
-    binding.pry
     @songs.each {|song| song}
   end
 
