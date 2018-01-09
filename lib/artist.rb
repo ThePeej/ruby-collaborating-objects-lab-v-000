@@ -24,7 +24,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     binding.pry
-    if self.all.include?(name)
+    if self.all.detect{|artist| artist.name == name}
       artist
     else
       Artist.new(name)
