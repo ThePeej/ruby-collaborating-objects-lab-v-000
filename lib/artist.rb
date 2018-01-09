@@ -16,6 +16,11 @@ class Artist
     @@all << self
   end
 
+  def add_song(name)
+
+
+  end
+
   def self.find_or_create_by_name(artist)
     if self.all.include?(artist)
       artist
