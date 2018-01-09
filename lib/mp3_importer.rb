@@ -17,6 +17,7 @@ class MP3Importer
 
   def import
     binding.pry
+    self.files
     @files.each do |file|
       name = file.split(" - ")[0]
       title = file.split(" - ")[1]
