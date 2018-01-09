@@ -14,7 +14,7 @@ class MP3Importer
       @files[index] = file.scan(/mp3s\/(.*)/)
     end
     @files
-    # binding.pry
+    binding.pry
   end
 
   def import
