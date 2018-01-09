@@ -27,14 +27,13 @@ class Artist
     if self.all.detect{|artist| artist.name == name}
       self.all.detect{|artist| artist.name == name}
     else
-      # binding.pry
       Artist.new(name)
     end
   end
 
   def print_songs
-    binding.pry
     @songs.each {|song| puts song}
+    binding.pry
   end
 
   def self.all
