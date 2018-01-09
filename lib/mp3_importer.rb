@@ -6,4 +6,8 @@ class Mp3_importer
     @path = path
   end
 
+  def files
+    @path
+  end
+
 end
