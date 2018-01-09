@@ -13,7 +13,6 @@ class Song
     song = self.new(name)
     song.artist = Artist.new(artist)
     song
-    # binding.pry
   end
 
 end
