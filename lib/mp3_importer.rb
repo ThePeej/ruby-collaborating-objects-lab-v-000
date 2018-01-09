@@ -28,7 +28,6 @@ class MP3Importer
       song.artist = Artist.new(name).save
     end
     binding.pry
-    song
   end
 
 end
