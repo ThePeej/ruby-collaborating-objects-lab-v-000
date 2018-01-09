@@ -33,7 +33,7 @@ class Artist
   end
 
   def print_songs
-    binding.pry
+    songs.collect {|song| puts song.name}
   end
 
   def self.all
