@@ -25,7 +25,7 @@ class MP3Importer
       name = file.split(" - ")[0]
       title = file.split(" - ")[1]
       song = Song.new(title)
-      song.artist = Artist.new(name)
+      song.artist = Artist.new(name).save
       song
     end
 
