@@ -9,7 +9,6 @@ class MP3Importer
   end
 
   def files
-    Dir.chdir @path
     binding.pry
   end
 
