@@ -23,6 +23,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(artist)
+    binding.pry
     if self.all.include?(artist)
       artist
     else
