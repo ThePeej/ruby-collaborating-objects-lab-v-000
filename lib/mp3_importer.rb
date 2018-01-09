@@ -25,7 +25,7 @@ class MP3Importer
       name = file.split(" - ")[0]
       title = file.split(" - ")[1]
       song = Song.new(title)
-      song.artist = Artist.new(name)
+      song.artist = Artist.find_or_create_by_name(name)
       binding.pry
       song.artist.save
     end
