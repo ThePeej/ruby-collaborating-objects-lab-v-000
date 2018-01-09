@@ -9,7 +9,7 @@ class Artist
   end
 
   def songs
-    @songs
+    @songs.each {|song| puts song}
   end
 
   def save
