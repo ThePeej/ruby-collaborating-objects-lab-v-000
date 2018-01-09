@@ -12,7 +12,6 @@ class MP3Importer
 
   def files
     @files = Dir.glob("*mp3")
-    @files
     binding.pry
   end
 
