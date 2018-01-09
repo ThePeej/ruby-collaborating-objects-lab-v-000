@@ -15,11 +15,11 @@ class Artist
   end
 
   def save
-    binding.pry
+    # binding.pry
     if !(@@all.include?(self))
       @@all << self
     end
-    binding.pry
+    # binding.pry
   end
 
   def add_song(song)
