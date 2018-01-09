@@ -7,7 +7,7 @@ class MP3Importer
   def initialize(path)
     @path = path
     Dir.chdir(@path)
-    binding.pry
+    # binding.pry
   end
 
   def files
