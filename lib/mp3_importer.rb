@@ -12,7 +12,7 @@ class MP3Importer
     Dir.chdir @path
     @files = Dir.glob("*mp3")
     @files
-    # binding.pry
+    binding.pry
   end
 
   def import
