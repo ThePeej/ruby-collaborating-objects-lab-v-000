@@ -6,12 +6,10 @@ class MP3Importer
 
   def initialize(path)
     @path = path
-    binding.pry
   end
 
   def files
-    Dir.chdir(@path)
-    @files = Dir.glob("*mp3")
+    @files = Dir.glob(@path + "/*")
     # binding.pry
   end
 
