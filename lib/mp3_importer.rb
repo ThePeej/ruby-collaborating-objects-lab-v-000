@@ -27,7 +27,7 @@ class MP3Importer
       song = Song.new(title)
       song.artist = Artist.find_or_create_by_name(name)
       song.artist.add_song(song)
-      Artist.save
+      song.artist.save
       # binding.pry
     end
     # binding.pry
