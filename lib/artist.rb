@@ -22,12 +22,12 @@ class Artist
     @songs << song
   end
 
-  def self.find_or_create_by_name(artist)
+  def self.find_or_create_by_name(name)
     binding.pry
-    if self.all.include?(artist)
+    if self.all.include?(name)
       artist
     else
-      Artist.new(artist)
+      Artist.new(name)
     end
   end
 
