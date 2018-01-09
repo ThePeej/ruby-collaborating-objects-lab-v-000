@@ -19,6 +19,7 @@ class Artist
     if !(@@all.include?(self))
       @@all << self
     end
+    binding.pry
   end
 
   def add_song(song)
